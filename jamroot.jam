@@ -1,0 +1,35 @@
+lib pq
+:
+:
+<name>pq
+;
+
+lib openssl
+:
+:
+<name>ssl
+;
+
+lib crypto
+:
+:
+<name>crypto
+;
+
+exe deduplication_server
+:
+  main.cpp
+  file.cpp
+  utils.cpp
+  pq
+  openssl
+  crypto
+:
+;
+
+exe comparator
+:
+  comparator.cpp
+  file.cpp
+:
+;
